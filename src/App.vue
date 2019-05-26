@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h1>Dust Now!</h1>
+    <p>Dust Rate History</p>
     <locationList/>
   </div>
 </template>

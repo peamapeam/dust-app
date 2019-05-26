@@ -4,7 +4,7 @@
       <option
         v-for="location in locations"
         v-bind:key="location"
-        v-on:click="changeId(location.id)"
+        v-on:submit="changeId(location.id)"
       >{{ location.dustboy_name }}</option>
     </select>
   </div>
