@@ -24,4 +24,14 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: -2rem;
+}
 </style>
