@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-    <Chartjs />
+   <location-list/>
   </div>
 </template>
 
 <script>
-import Chartjs from './components/Chartjs.vue'
+import locationList from "./components/locationList.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Chartjs
+    locationList
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

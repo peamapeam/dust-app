@@ -1,13 +1,7 @@
 <template>
   <div>
     <h4>{{ station.dustboy_name}}</h4>
-    <div id="box">
-      <canvas
-        id="myChart"
-        width="400"
-        height="400"
-      ></canvas>
-    </div>
+   
 
   </div>
 </template>
@@ -29,13 +23,14 @@ export default {
   methods: {
     getStation() {
       Axios.get(
-        "https://agile-reaches-83574.herokuapp.com/api/stations/9/avghr"
+        "https://agile-reaches-83574.herokuapp.com/api/stations/"+ this.id +"/avghr"
       ).then(res => {
         console.log(res.data);
         this.station = res.data[0]
         this.valChart = res.data[0].value
       });
-    }
+    },
+  
 
   },
   mounted() {
